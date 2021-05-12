@@ -11,8 +11,8 @@ There are about 200 dog breeds in the world right now, which can make differing 
 # Data 
 The data in this project was pulled from Kaggle and includes 20,580 images of 120 different dog breeds. The link to the data: https://www.kaggle.com/jessicali9530/stanford-dogs-dataset
 
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/imagesbreed.png?raw=true" alt= "imagecount" >
-
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/imagesbreed.png?raw=true" alt= "imagecount" >
+          
 This plot shows the amount of images per breed. There is no significant class imbalance issue, however it is evident that the breed with the most images are Maltese and least is Redbone.
 
 <img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/eda.png?raw=true" alt= "eda" >
@@ -25,18 +25,18 @@ There are many breeds that can be commonly confused. For example, Malamute and S
 
 Later, instances of predicting on these commonly mistaken dogs will be shown to see how the model performs.
 
-#Process
+# Process
  
 After reading in the data as numerical arrays, the data was resized and scaled using various Tensorflow tools. The data was then augmented using Tensorflow's ImageDataGenerator and various version of each image were fed to the model (ex: zoomed in and flipped versions) to prevent the model from overfitting. 
 
 # Model Evaluation
 
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/eval.png?raw=true" alt= "eval" >
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/eval.png?raw=true" alt= "eval" >
 
-After running several models, the model with the highest accuracy score is the InceptionV3 Model with an accuracy score of 91.97%. Plotted below are the accuracy and loss per epoch graphs for this model.
+After running several models, the model with the highest accuracy score is the InceptionV3 Model with an accuracy score of 96.12%. Plotted below are the accuracy and loss per epoch graphs for this model.
 
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/accuracy.png?raw=true" alt= "acc" >
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/loss.png?raw=true" alt= "loss" >
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/accuracy.png?raw=true" alt= "acc" >
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/loss.png?raw=true" alt= "loss" >
 
 # Predictions
 
@@ -50,8 +50,8 @@ Here is an image of a Malamute that the model wrongly predicted as a Siberian Hu
 
 Here are some other images the model predicted correctly.
 
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/lab.png?raw=true" alt= "lab" >
-<img src="https://github.com/anisha732/Phase5Proj/blob/master/photos/shihtzu.png?raw=true" alt= "shihtzu" >
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/lab.png?raw=true" alt= "lab" >
+<img src="https://github.com/anisha732/Phase5Proj/blob/main/photos/shihtzu.png?raw=true" alt= "shihtzu" >
 
 # Next Steps
 - Include images of mixed breeds within classes instead of just pure dog breeds (ex: cockapoo, puggle)
@@ -61,7 +61,7 @@ Here are some other images the model predicted correctly.
 # Repository Structure
 ```
 ├── photos
-├── notebooks
+├── Raw_Notebook.ipynb
 ├── Final_notebook.ipynb
 ├── DogClassificationPresentation
 └── README.md
